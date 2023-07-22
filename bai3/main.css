@@ -1,0 +1,122 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container {
+    height: 500px;
+    margin: 100px 0px;
+    background-color:#313642;
+}
+.box {
+   
+    margin: 0 auto;
+    width: 380px;
+    position: relative;
+    top: 120px;
+    transition-duration: 0.3s;
+    
+}
+.angle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 0;
+    width: 0;
+   border-left-width: 120px;
+   border-right-width: 120px;
+   border-top-width:60px ;
+   border-bottom-width:60px;
+   /*  */
+   border-style: solid;
+   border-top-color:transparent;
+   border-left-color:#d64a45;
+   border-right-color: #d85851;
+   border-bottom-color: #d85851;
+   margin: 0px auto;
+   box-shadow: 0 100000px red 0;
+   z-index: 5;
+
+}
+.angle-2 {
+    
+    top:0;
+    right: 0px;
+    height: 0;
+    width: 0;
+   border-left-width: 120px;
+   border-right-width: 120px;
+   border-top-width:60px ;
+  
+   border-bottom-width:60px;
+   /*  */
+   position: absolute;   
+   border-style: solid;
+   border-top-color: #bd403c;
+   border-left-color:transparent;
+   border-right-color:transparent;
+   border-bottom-color:transparent;
+   transition-duration: 0.4s;
+   z-index: 2;
+   
+}
+.angle-3 {
+    
+    top:0;
+    right: 0px;
+    height: 0;
+    width: 0;
+   border-left-width: 120px;
+   border-right-width: 120px;
+   border-top-width:60px ;
+  
+   border-bottom-width:60px;
+   /*  */
+   position: absolute;   
+   border-style: solid;
+   border-top-color:transparent;
+   border-left-color:transparent;
+   border-right-color:transparent;
+   border-bottom-color: #bd403c;
+   transition-duration: 0.5s ;
+   transition-property: top; 
+   z-index: 3;
+   transition:step-end 0.5s;
+
+   
+  
+   
+}
+.letter {
+    width:190px;
+    height: 40px;
+    background-color:white;
+    margin: 0px auto;
+    right: 25px;
+    position: absolute;
+    transition: step-end 0.6s;
+    transition-duration: 0.3s;
+    transition-delay: 0.3s;
+    z-index: 4;
+    top: 60px;
+    transition-property: transform height;
+    transition-timing-function: ease;
+    
+   
+
+}
+
+.box:hover {
+    transform: translateY(13px);
+}
+
+
+.box:hover .letter {
+    transform: translateY(-150px);
+   z-index: 4;
+   height: 160px;
+}
+
+.box:hover .angle-3{
+    top: -119px;
+}
